@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import ImageGallery from "./components/ImageGallery";
 import { IProduct } from "@/models/Product";
 import { apiClient } from "@/lib/api-client";
-import { Camera, Image, ShoppingCart, Star, Users, Search, ChevronRight } from 'lucide-react';
+import { Camera, Image, Star, Users, Search, ChevronRight } from 'lucide-react';
 export default function Home() {
   const [products, setProducts] = useState<IProduct[]>([]);
 
