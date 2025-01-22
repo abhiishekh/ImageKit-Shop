@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <div className="navbar bg-base-300 sticky top-0 z-40">
       <div className="container mx-auto">
-        <div className="flex-1 px-2 lg:flex-none">
+        <div className="sm:flex-1 px-2 lg:flex-none">
           <Link
             href="/"
             className="btn btn-ghost text-xl gap-2 normal-case font-bold"
@@ -44,7 +44,7 @@ export default function Header() {
               </div>
               <ul
                 tabIndex={0}
-                className="dropdown-content z-[1] shadow-lg bg-base-100 rounded-box w-64 mt-4 py-2"
+                className="dropdown-content z-[1] shadow-lg bg-base-100 rounded-box w-64 mt-4 overflow-hidden"
               >
                 {session ? (
                   <>
@@ -58,7 +58,7 @@ export default function Header() {
                       <li>
                         <Link
                           href="/admin"
-                          className="px-4 py-2 hover:bg-base-200 block w-full"
+                          className="px-4 py-3 hover:bg-base-200 block w-full"
                           onClick={() =>
                             showNotification(
                               "Welcome to Admin Dashboard",

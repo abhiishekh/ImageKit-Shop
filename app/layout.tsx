@@ -25,7 +25,7 @@ export default function RootLayout({
         />
         <Providers>
           <Header />
-          <main className="container mx-auto px-4 py-8">{children}</main>
+          <main className=" mx-auto ">{children}</main>
         </Providers>
       </body>
     </html>

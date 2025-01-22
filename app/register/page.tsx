@@ -44,9 +44,9 @@ export default function Register() {
   };
 
   return (
-    <div className="max-w-md mx-auto">
+    <div className="max-w-md mx-auto bg-base-300 h-[500px]  mt-8 rounded-lg flex flex-col items-center justify-center px-3">
       <h1 className="text-2xl font-bold mb-4">Register</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 w-full">
         <div>
           <label htmlFor="email" className="block mb-1">
             Email
